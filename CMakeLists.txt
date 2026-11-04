@@ -38,13 +38,13 @@ qt_policy(SET QTP0001 NEW)
 
 if(ECM_SOURCE_UNDER_VERSION_CONTROL)
     execute_process(
-        COMMAND git rev-parse --abbrev-ref HEAD
+        COMMAND git -c safe.directory=${CMAKE_SOURCE_DIR} rev-parse --abbrev-ref HEAD
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
         OUTPUT_VARIABLE GIT_BRANCH
         OUTPUT_STRIP_TRAILING_WHITESPACE)
 
     execute_process(
-        COMMAND git rev-parse --short HEAD
+        COMMAND git -c safe.directory=${CMAKE_SOURCE_DIR} rev-parse --short HEAD
         WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
         OUTPUT_VARIABLE GIT_COMMIT_HASH
         OUTPUT_STRIP_TRAILING_WHITESPACE)

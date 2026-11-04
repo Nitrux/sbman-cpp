@@ -22,6 +22,8 @@ jobs:
       image: debian:stable-20260713
       env:
         DEBIAN_FRONTEND: noninteractive
+        LANG: C.UTF-8
+        LC_ALL: C.UTF-8
         PACKAGECLOUD_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
 
     steps:
@@ -75,6 +77,8 @@ jobs:
       image: arm64v8/debian:stable-20260713
       env:
         DEBIAN_FRONTEND: noninteractive
+        LANG: C.UTF-8
+        LC_ALL: C.UTF-8
         PACKAGECLOUD_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
 
     steps:
