@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Secure Boot Manager
+Comment=Enroll the Nitrux Secure Boot certificates
+Exec=sbman
+Icon=security-high
+Terminal=false
+Type=Application
+Categories=System;Security;
+StartupNotify=true
