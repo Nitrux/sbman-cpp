@@ -13,12 +13,17 @@ fi
 
 $APT_COMMAND update -q
 $APT_COMMAND install -y --no-install-recommends \
+    appstream \
+    automake \
+    autotools-dev \
     build-essential \
+    clang \
     cmake \
     curl \
     devscripts \
     dpkg-dev \
     extra-cmake-modules \
+    gettext \
     git \
     gnupg \
     libkf6config-dev \
@@ -26,6 +31,9 @@ $APT_COMMAND install -y --no-install-recommends \
     libkf6i18n-dev \
     libkf6notifications-dev \
     libkf6windowsystem-dev \
+    libxcb-icccm4-dev \
+    libxcb-shape0-dev \
+    libxkbcommon-dev \
     lintian \
     pkg-config \
     qt6-base-dev \

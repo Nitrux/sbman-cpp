@@ -8,6 +8,8 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$repo_root"
 
+git config --global --add safe.directory "$repo_root"
+
 package_version="${PACKAGE_VERSION:-1.0.0}"
 target_arch="${TARGET_ARCH:-$(dpkg --print-architecture)}"
 deb_host_multiarch="${DEB_HOST_MULTIARCH:-$(dpkg-architecture -qDEB_HOST_MULTIARCH)}"
