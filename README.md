@@ -1,5 +1,9 @@
 # Secure Boot Manager | [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
+<p align="center">
+  <img width="128" height="128" src="https://raw.githubusercontent.com/Nitrux/luv-icon-theme/master/Luv/mimetypes/64/application-x-ms-dos-executable.svg">
+</p>
+
 Secure Boot certificate enrollment utility for Nitrux.
 
 Secure Boot Manager is a C++ rewrite of [sb-manager](https://github.com/Nitrux/sb-manager) built with MauiKit. It imports the Secure Boot certificates provided by Nitrux for its GRUB and kernel packages.
