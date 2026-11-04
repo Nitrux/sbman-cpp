@@ -21,8 +21,11 @@ $APT_COMMAND install -y --no-install-recommends \
     extra-cmake-modules \
     git \
     gnupg \
+    libkf6config-dev \
     libkf6coreaddons-dev \
     libkf6i18n-dev \
+    libkf6notifications-dev \
+    libkf6windowsystem-dev \
     lintian \
     pkg-config \
     qt6-base-dev \
