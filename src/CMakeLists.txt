@@ -33,3 +33,11 @@ install(FILES
     DESTINATION ${KDE_INSTALL_APPDIR})
 
 qt_finalize_target(${PROJECT_NAME})
+
+target_precompile_headers(${PROJECT_NAME} PRIVATE
+    <QDebug>
+    <QFileInfo>
+    <QGuiApplication>
+    <QQmlEngine>
+    <QQuickWindow>
+)
